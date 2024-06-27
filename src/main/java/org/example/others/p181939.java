@@ -1,4 +1,4 @@
-package org.example;
+package org.example.others;
 
 public class p181939 {
     public static void main(String[] args) {

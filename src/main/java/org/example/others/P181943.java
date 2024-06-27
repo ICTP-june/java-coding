@@ -1,6 +1,6 @@
-package org.example;
+package org.example.others;
 
-public class p181943 {
+public class P181943 {
     // https://school.programmers.co.kr/learn/courses/30/lessons/181943
     public static void main(String[] args) {
         String result = solution("aaaaaa","bbb",3);
