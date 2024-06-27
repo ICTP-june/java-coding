@@ -2,6 +2,9 @@ package org.example.day4;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class Day4ProblemsTest {
@@ -25,5 +28,19 @@ class Day4ProblemsTest {
                 ,1
                 ,new boolean[]{false, false, false, true, false, false, false});
         assertEquals(10, result2);
+    }
+
+    @Test
+    void testSolution_181841() {
+        Day4Problems d4p = new Day4Problems();
+        String result = d4p.solution_181841(
+                new String[]{"abc", "def", "ghi"},
+                "ef");
+        assertEquals("abcghi", result);
+
+        String result2 = d4p.solution_181841(
+                new String[]{"abc", "bbc", "cbc"},
+                "c");
+        assertEquals("", result2);
     }
 }

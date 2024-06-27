@@ -1,5 +1,8 @@
 package org.example.day4;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 /*
 * https://school.programmers.co.kr/learn/courses/30/lessons/{number}
 * {number} = solution_{number}
@@ -23,4 +26,18 @@ public class Day4Problems {
         }
         return result;
     }
+
+    public String solution_181841(String[] str_list, String ex) {
+        ArrayList<String> list = new ArrayList<>(Arrays.asList(str_list));
+        String result = "";
+        for(String s : list){
+            if(s.contains(ex)) {
+                // do nothing
+            } else {
+                result += s;
+            }
+        }
+        return result;
+    }
+
 }
